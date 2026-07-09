@@ -55,6 +55,8 @@ dev = [
     "python-rapidjson",
 ]
 app = [
+    "fastapi",
+    "python-multipart",
     "streamlit",
 ]
 
