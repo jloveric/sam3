@@ -3,6 +3,11 @@
 from __future__ import annotations
 
 import io
+import sys
+from pathlib import Path
+
+# Streamlit adds this file's directory to sys.path, not the repo root.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import streamlit as st
 import torch
